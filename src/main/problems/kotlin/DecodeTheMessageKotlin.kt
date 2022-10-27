@@ -1,3 +1,5 @@
+package kotlin
+
 import java.util.HashMap
 
 object DecodeTheMessageKotlin {
