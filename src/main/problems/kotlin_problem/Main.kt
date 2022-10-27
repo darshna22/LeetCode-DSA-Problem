@@ -1,4 +1,4 @@
-package kotlin
+package kotlin_problem
 
 fun main(args: Array<String>) {
     println("Hello World!")
