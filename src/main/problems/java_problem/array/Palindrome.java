@@ -1,4 +1,4 @@
-package array;
+package java_problem.array;
 
 public class Palindrome {
     public static void main(String args[]) {
