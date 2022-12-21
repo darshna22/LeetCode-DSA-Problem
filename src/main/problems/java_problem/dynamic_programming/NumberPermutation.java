@@ -4,7 +4,7 @@ import java.util.*;
 
 public class NumberPermutation {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 2, 1};
         System.out.println(checkInclusion(nums));
     }
 
@@ -18,7 +18,7 @@ public class NumberPermutation {
     }
 
     public static List<List<Integer>> findPermutation(int totalPermutation, List<Integer> ls) {
-        List<List<Integer>> permutations = new ArrayList<>();
+        Set<List<Integer>> permutations = new HashSet<>();
         for (int i = 0; i < totalPermutation; i++) {
             List<Integer> numbers = new ArrayList<Integer>(ls);
             int dividend = i;
@@ -32,7 +32,7 @@ public class NumberPermutation {
             }
             permutations.add(permutation);
         }
-        return permutations;
+        return new ArrayList<>(permutations);
     }
 
     public static int fact(int n) {
